@@ -6,11 +6,23 @@
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
+  <h2>Contacts</h2>
+
+  <form class="contact-form">
+    <input type="text" class="contact-form__first" placeholder="First Name">
+    <input type="text" class="contact-form__last" placeholder="Last Name">
+
+    <button>Save</button>
+  </form>
+
+  <ul class="contacts">
+  </ul>
 
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+    require(`index`)();
   </script>
 </body>
 </html>
