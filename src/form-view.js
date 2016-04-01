@@ -4,6 +4,7 @@ export default class ContactFormView {
     this.application = application;
 
     this.element.addEventListener(`submit`, (ev) => {
+      // Stop the browser from reloading
       ev.preventDefault();
 
       const formData = {
@@ -23,6 +24,7 @@ export default class ContactFormView {
         this.element.querySelector(`.contact-form__first`).value = ``;
         this.element.querySelector(`.contact-form__last`).value = ``;
 
+        // Inform the application that a new contact exists in the list
         this.application.addContact(data);
       });
     });

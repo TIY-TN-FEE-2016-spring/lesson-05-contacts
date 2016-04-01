@@ -22,7 +22,10 @@
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
-    require(`index`)();
+    // Looks up and immediately runs the "index" module
+    var index = require(`index`);
+
+    index();
   </script>
 </body>
 </html>
